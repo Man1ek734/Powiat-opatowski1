@@ -16,3 +16,5 @@
 @media(max-width:560px){.subhero h1{font-size:36px}.info-grid{grid-template-columns:1fr}.bigstats{gap:25px;flex-wrap:wrap}.bigstats b{font-size:28px}.people-grid article{grid-template-columns:78px 1fr;padding:24px}.directory article{grid-template-columns:35px 1fr}.directory a{grid-column:2;text-align:left}.contact-large{grid-template-columns:1fr}}
 
 .person-photo{width:180px;min-height:220px;object-fit:contain;object-position:center;display:block}.official-photo{width:76px!important;height:90px!important;object-fit:contain;object-position:center;display:block}@media(max-width:560px){.person-photo{width:100px;min-height:210px}}
+
+@media(max-width:560px){.people-grid article{grid-template-columns:112px 1fr!important;column-gap:22px!important;align-items:start}.people-grid .official-photo{width:100px!important;height:120px!important;align-self:center!important;transform:translateY(24px);margin-right:12px}.people-grid h2{font-size:25px;line-height:1.08}}
