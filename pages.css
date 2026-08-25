@@ -15,4 +15,4 @@
 @media(max-width:900px){.subhero{padding:65px 0}.subhero h1{font-size:42px}.info-grid{grid-template-columns:1fr 1fr}.submain{padding-top:60px}.people-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.subhero h1{font-size:36px}.info-grid{grid-template-columns:1fr}.bigstats{gap:25px;flex-wrap:wrap}.bigstats b{font-size:28px}.people-grid article{grid-template-columns:78px 1fr;padding:24px}.directory article{grid-template-columns:35px 1fr}.directory a{grid-column:2;text-align:left}.contact-large{grid-template-columns:1fr}}
 
-.person-photo{width:180px;min-height:220px;object-fit:cover;object-position:center 18%;display:block}.official-photo{width:76px!important;height:90px!important;object-fit:cover;object-position:center 18%;display:block}@media(max-width:560px){.person-photo{width:100px;min-height:210px}}
+.person-photo{width:180px;min-height:220px;object-fit:contain;object-position:center;display:block}.official-photo{width:76px!important;height:90px!important;object-fit:contain;object-position:center;display:block}@media(max-width:560px){.person-photo{width:100px;min-height:210px}}
