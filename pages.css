@@ -18,3 +18,8 @@
 .person-photo{width:180px;min-height:220px;object-fit:contain;object-position:center;display:block}.official-photo{width:76px!important;height:90px!important;object-fit:contain;object-position:center;display:block}@media(max-width:560px){.person-photo{width:100px;min-height:210px}}
 
 @media(max-width:560px){.people-grid article{grid-template-columns:112px 1fr!important;column-gap:22px!important;align-items:start}.people-grid .official-photo{width:100px!important;height:120px!important;align-self:center!important;transform:translateY(24px);margin-right:12px}.people-grid h2{font-size:25px;line-height:1.08}}
+
+/* Pełne, kwadratowe portrety w zakładce Władze */
+.people-grid article{grid-template-columns:180px 1fr;column-gap:24px;align-items:center}
+.people-grid .official-photo{grid-row:1/6;width:150px!important;height:150px!important;object-fit:cover;object-position:center;align-self:center;margin:0!important;transform:none!important}
+@media(max-width:560px){.people-grid article{grid-template-columns:128px 1fr!important;column-gap:18px!important}.people-grid .official-photo{width:112px!important;height:112px!important;margin:0!important;transform:none!important}}
