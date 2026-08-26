@@ -47,3 +47,6 @@ footer .brand.invert{display:flex;align-items:center;gap:15px}footer .brand.inve
 .utility-links .audience-link:hover:after{transform:scaleX(1)}
 @media(max-width:900px){.utility-links .audience-link{display:inline-flex!important}.utility-links a[href="dostepnosc.html"]{display:none}}
 @media(max-width:560px){.utility-links{gap:11px}.utility-links .audience-link{font-size:9px;letter-spacing:.4px}.utility-links a[href^="https://bip"]{display:none}}
+
+/* Wyszukiwarka całej witryny */
+.search-box{z-index:12}.search-box .results{max-height:390px;overflow-y:auto;text-align:left}.search-box .results a{align-items:center;gap:20px}.search-box .results a>span{display:flex;flex-direction:column;gap:4px}.search-box .results a b{font:15px Georgia;color:var(--ink)}.search-box .results a small{text-transform:uppercase;letter-spacing:1.2px;color:var(--bright);font-size:8px;font-weight:800}.search-box .results a i{color:var(--green);font-style:normal;font-size:18px}.search-box .results p{margin:0;color:var(--muted);line-height:1.5}
