@@ -8,7 +8,7 @@
 <meta name="description" content="Oficjalny portal Powiatu Opatowskiego. Sprawy urzędowe, wydziały, jednostki, kontakt i informacje o powiecie."/>
 <link rel="shortcut icon" type="image/svg+xml" href="logo-powiatu.svg?v=2"/>
 <link rel="icon" type="image/svg+xml" href="logo-powiatu.svg?v=2"/>
-</head>
+<link rel="stylesheet" href="accessibility.css?v=1"></head>
 <body>
 <main>
 <div class="utility">
@@ -736,5 +736,5 @@ input.addEventListener("input",renderSearch);
 input.addEventListener("focus",()=>{if(input.value.trim())renderSearch()});
 input.addEventListener("keydown",e=>{if(e.key==="Enter"&&currentMatches[0]){e.preventDefault();location.href=currentMatches[0].href}else if(e.key==="Escape"){results.hidden=true;input.blur()}});
 document.addEventListener("click",e=>{if(!e.target.closest(".search-box"))results.hidden=true});document.querySelector(".utility-links button").onclick=()=>document.body.style.fontSize=document.body.style.fontSize==="18px"?"":"18px";</script>
-</body>
+<script src="accessibility.js?v=1"></script></body>
 </html>
