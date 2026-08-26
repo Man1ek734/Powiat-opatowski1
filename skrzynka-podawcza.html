@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Elektroniczna skrzynka podawcza | Powiat Opatowski</title>
+  <meta name="description" content="Jak wysłać pismo elektroniczne do Starostwa Powiatowego w Opatowie przez e-Doręczenia">
+  <link rel="icon" href="logo-powiatu.svg">
+  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="pages.css?v=13">
+  <link rel="stylesheet" href="public-info.css?v=1">
+</head>
+<body>
+  <div class="utility"><div class="wrap utility-inner"><span>☎ Centrala: <a href="tel:+48158682971">15 868 29 71</a></span><span>◷ Pon.–Pt. 7:30–15:30</span><div class="utility-links"><a href="dostepnosc.html">Dostępność</a><a href="bip.html">BIP</a></div></div></div>
+  <header class="header"><div class="wrap nav"><a class="brand" href="index.html"><img class="brand-logo" src="logo-powiatu.svg" alt="Herb Powiatu Opatowskiego"><span><b>POWIAT OPATOWSKI</b><small>Starostwo Powiatowe w Opatowie</small></span></a><button class="hamburger" aria-label="Otwórz menu"><i></i><i></i><i></i></button><nav><a href="powiat.html">Powiat</a><a class="active" href="mieszkaniec.html">Mieszkaniec</a><a href="turysta.html">Turysta</a><a href="wladze.html">Władze</a><a href="wydzialy.html">Wydziały</a><a href="jednostki.html">Jednostki</a><a href="projekty.html">Projekty</a><a href="kontakt.html">Kontakt</a></nav></div></header>
+
+  <section class="subhero"><div class="wrap"><span class="eyebrow">E-URZĄD</span><h1>Elektroniczna skrzynka podawcza</h1><p>Wyślij pismo do Starostwa bez wychodzenia z domu — bezpiecznie i z urzędowym potwierdzeniem.</p></div></section>
+
+  <main class="submain wrap public-info-page">
+    <section class="public-info-lead">
+      <div><span class="eyebrow dark">E-DORĘCZENIA</span><h2>Aktualny sposób wysyłania pism</h2><p>Od 1 stycznia 2026 roku e-Doręczenia są podstawowym kanałem elektronicznej korespondencji z podmiotami publicznymi. Wysłanie wiadomości do urzędu tą drogą jest bezpłatne i pozwala otrzymać dowód nadania oraz odbioru.</p><div class="info-actions"><a class="info-button" href="https://edoreczenia.gov.pl" target="_blank" rel="noopener">Przejdź do swojej skrzynki ↗</a><a class="info-button secondary" href="https://www.gov.pl/web/e-doreczenia/jak-przygotowac-wiadomosc-elektroniczna-w-e-doreczeniach" target="_blank" rel="noopener">Instrukcja gov.pl ↗</a></div></div>
+      <aside class="delivery-address"><small>ADRES E-DORĘCZEŃ STAROSTWA</small><strong id="deliveryAddress">AE:PL-34526-65838-GRGUD-42</strong><button class="copy-button" id="copyAddress" type="button">Kopiuj adres</button></aside>
+    </section>
+
+    <section class="public-info-section"><span class="eyebrow dark">KROK PO KROKU</span><h2>Jak wysłać pismo</h2><div class="steps-grid"><article><b>01</b><h3>Zaloguj się</h3><p>Otwórz swoją skrzynkę e-Doręczeń i zaloguj się odpowiednią metodą.</p></article><article><b>02</b><h3>Wpisz adres urzędu</h3><p>W polu odbiorcy wklej adres: AE:PL-34526-65838-GRGUD-42.</p></article><article><b>03</b><h3>Dodaj pismo</h3><p>Wpisz temat i treść wiadomości, a potrzebne dokumenty dodaj jako załączniki.</p></article><article><b>04</b><h3>Wyślij i zachowaj dowód</h3><p>Po wysłaniu pobierz lub zachowaj urzędowy dowód nadania i odbioru.</p></article></div></section>
+
+    <aside class="important-note"><b>Ważne w sprawie ePUAP</b><p>Od 1 stycznia 2026 r. podstawowym kanałem jest system e-Doręczeń. W szczególności pisma kierowane do Wydziału Organizacji i Spraw Obywatelskich należy składać przez e-Doręczenia — wysłanie ich przez ePUAP może nie wywołać skutków prawnych.</p></aside>
+
+    <section class="source-bar"><div><b>Inne formy kontaktu</b><p>Pismo można też wysłać pocztą, złożyć osobiście albo skontaktować się z urzędem pod numerem 15 868 29 71.</p></div><a href="kontakt.html">Dane kontaktowe →</a></section>
+  </main>
+
+  <footer><div class="wrap footer-grid"><div class="brand invert"><img class="brand-logo" src="logo-powiatu.svg" alt=""><span><b>POWIAT OPATOWSKI</b><small>Starostwo Powiatowe w Opatowie</small></span></div><div><b>E-Urząd</b><a href="skrzynka-podawcza.html">Skrzynka podawcza</a><a href="bip.html">BIP</a><a href="dostepnosc.html">Dostępność</a></div><div><b>Urząd</b><a href="wydzialy.html">Wydziały</a><a href="kontakt.html">Kontakt</a><a href="mieszkaniec.html">Mieszkaniec</a></div><div><b>Kontakt</b><a href="tel:+48158682971">15 868 29 71</a><a href="mailto:powiat@opatow.pl">powiat@opatow.pl</a></div></div><div class="wrap copyright">© 2026 Powiat Opatowski</div></footer>
+  <script>const n=document.querySelector('.nav nav');document.querySelector('.hamburger').onclick=()=>n.classList.toggle('open');const copy=document.getElementById('copyAddress');copy.onclick=async()=>{const value=document.getElementById('deliveryAddress').textContent;try{await navigator.clipboard.writeText(value);copy.textContent='Skopiowano ✓'}catch{copy.textContent='Zaznacz i skopiuj adres'}setTimeout(()=>copy.textContent='Kopiuj adres',2200)}</script>
+</body>
+</html>
