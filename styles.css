@@ -40,3 +40,10 @@ footer .brand.invert{display:flex;align-items:center;gap:15px}footer .brand.inve
 
 /* Wyśrodkowanie portretów wewnątrz kart */
 .leaders .person-photo{align-self:center!important;justify-self:start}
+
+/* Przełączniki Mieszkaniec / Turysta */
+.utility-links .audience-link{text-transform:uppercase;letter-spacing:.8px;color:#fff;font-weight:800;position:relative;padding:3px 0}
+.utility-links .audience-link:after{content:"";position:absolute;height:2px;background:var(--bright);left:0;right:0;bottom:-4px;transform:scaleX(0);transition:.2s}
+.utility-links .audience-link:hover:after{transform:scaleX(1)}
+@media(max-width:900px){.utility-links .audience-link{display:inline-flex!important}.utility-links a[href="dostepnosc.html"]{display:none}}
+@media(max-width:560px){.utility-links{gap:11px}.utility-links .audience-link{font-size:9px;letter-spacing:.4px}.utility-links a[href^="https://bip"]{display:none}}
