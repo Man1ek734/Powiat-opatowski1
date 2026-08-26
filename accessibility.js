@@ -1,5 +1,5 @@
 (()=>{
-  const STORAGE_KEY="powiat-opatowski-accessibility-v1";
+  const STORAGE_KEY="powiat-opatowski-accessibility-v2";
   const levels=[1,1.15,1.3];
   const defaults={font:0,contrast:false,links:false};
   let settings={...defaults};

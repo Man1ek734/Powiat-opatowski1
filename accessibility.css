@@ -48,8 +48,15 @@
 .accessibility-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 html.a11y-links a{text-decoration:underline!important;text-decoration-thickness:2px!important;text-underline-offset:.2em!important}
-/* Wzmacnia kontrast gotowej strony bez nakładania czarnej lub białej warstwy. */
-html.a11y-contrast body> *:not(.accessibility-panel){filter:contrast(1.45) saturate(.7)}
+/* Tryb kontrastu zmienia wyłącznie kolory systemowe strony. Nie dodaje
+   nakładek, filtrów ani nowych teł, więc nie może zasłonić zawartości. */
+html.a11y-contrast body{
+  --ink:#000;
+  --green:#034b36;
+  --bright:#006b42;
+  --muted:#26342e;
+  --line:#6b7771;
+}
 html.a11y-contrast .accessibility-panel{border:2px solid #102b22;border-top:5px solid #0d5a42}
 html.a11y-contrast .accessibility-switch[aria-checked="true"]{outline:3px solid #102b22!important;outline-offset:2px}
 
