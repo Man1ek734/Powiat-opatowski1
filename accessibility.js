@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="accessibility-option">
-        <span><b>Wysoki kontrast</b><small>Jasne tło i wyraźne kolory</small></span>
+        <span><b>Wysoki kontrast</b><small>Wyraźniejszy tekst i kolory</small></span>
         <button class="accessibility-switch" type="button" role="switch" aria-checked="false" data-setting="contrast" aria-label="Włącz wysoki kontrast"></button>
       </div>
       <div class="accessibility-option">
