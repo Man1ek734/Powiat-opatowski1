@@ -37,3 +37,6 @@ footer .brand.invert{display:flex;align-items:center;gap:15px}footer .brand.inve
 .leaders article>div:last-child{padding:38px 36px 38px 20px}
 @media(max-width:700px){.leaders article{grid-template-columns:140px 1fr;min-height:240px}.leaders .person-photo{width:118px;height:118px;min-height:0;margin-left:18px;object-position:center}.leaders article>div:last-child{padding:30px 20px}}
 @media(max-width:420px){.leaders article{grid-template-columns:124px 1fr}.leaders .person-photo{width:104px;height:104px;margin-left:14px}.leaders article>div:last-child{padding:26px 14px}}
+
+/* Wyśrodkowanie portretów wewnątrz kart */
+.leaders .person-photo{align-self:center!important;justify-self:start}
