@@ -1,0 +1,82 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Autobusy PZT – rozkład jazdy | Powiat Opatowski</title><meta name="description" content="Godziny odjazdów, linie, kierunki i przystanki Powiatowego Zakładu Transportu w Opatowie"><link rel="icon" href="logo-powiatu.svg"><link rel="stylesheet" href="styles.css?v=9"><link rel="stylesheet" href="pages.css?v=13"></head><body><div class="utility"><div class="wrap utility-inner"><span>☎ PZT: <a href="tel:+48797994810">797 994 810</a></span><span>◷ Pon.–Pt. 7:30–15:30</span><div class="utility-links"><a href="dostepnosc.html">Dostępność</a><a href="https://bip.opatow.pl" target="_blank" rel="noopener">BIP ↗</a></div></div></div><header class="header"><div class="wrap nav"><a class="brand" href="index.html"><img class="brand-logo" src="logo-powiatu.svg" alt="Herb Powiatu Opatowskiego"><span><b>POWIAT OPATOWSKI</b><small>Starostwo Powiatowe w Opatowie</small></span></a><button class="hamburger" aria-label="Otwórz menu"><i></i><i></i><i></i></button><nav><a href="powiat.html">Powiat</a><a class="active" href="mieszkaniec.html">Mieszkaniec</a><a href="turysta.html">Turysta</a><a href="wladze.html">Władze</a><a href="wydzialy.html">Wydziały</a><a href="jednostki.html">Jednostki</a><a href="projekty.html">Projekty</a><a href="kontakt.html">Kontakt</a></nav></div></header><section class="subhero pzt-hero"><div class="wrap"><span class="eyebrow">TRANSPORT PUBLICZNY</span><h1>Autobusy PZT</h1><p>Sprawdź, o której godzinie odjeżdża autobus, dokąd jedzie i przez jakie miejscowości przejeżdża.</p></div></section><nav class="pzt-tabs wrap" aria-label="Rozkład jazdy"><a class="active" href="#odjazdy">Najbliższe odjazdy</a><a href="#linie">Linie</a><a href="#przystanki">Przystanki</a></nav><main class="submain wrap pzt-page"><section id="odjazdy" class="pzt-planner"><div class="pzt-planner-head"><div><span class="eyebrow dark">ROZKŁAD JAZDY</span><h2>Najbliższe odjazdy</h2><p>Godziny według rozkładów opublikowanych przez PZT w Opatowie.</p></div><div class="pzt-now"><small>TERAZ</small><b id="clock">--:--</b><span id="todayLabel"></span></div></div><div class="pzt-controls"><label><span>PRZYSTANEK</span><select id="stopSelect"><option value="sienkiewicza">Opatów – ul. Sienkiewicza (Starostwo) 03</option><option value="sempolowska">Opatów – ul. Sempołowskiej 01</option><option value="slowackiego">Opatów – ul. Słowackiego 03</option></select></label><label><span>DZIEŃ PODRÓŻY</span><input id="dateSelect" type="date"></label><label><span>SZUKAJ KIERUNKU LUB LINII</span><input id="routeSearch" type="search" placeholder="np. Tarłów, Kielce, linia 78"></label></div><div class="pzt-list-head"><p id="resultTitle">Odjazdy</p><button id="allDayButton" type="button">Pokaż cały dzień</button></div><div id="departureList" class="departure-list" aria-live="polite"></div><div id="noDepartures" class="pzt-empty" hidden><b>Brak pasujących odjazdów</b><p>Zmień dzień, przystanek albo wpisaną nazwę kierunku.</p></div></section><section id="linie" class="pzt-lines-section"><div><span class="eyebrow dark">LINIE PZT</span><h2>Wybierz linię</h2><p>Kliknij numer, aby znaleźć wszystkie odjazdy tej linii z wybranego przystanku.</p></div><div id="lineChips" class="pzt-line-chips"></div></section><section id="przystanki" class="pzt-stops-section"><div class="pzt-section-title"><span class="eyebrow dark">PRZYSTANKI</span><h2>Główne przystanki w Opatowie</h2></div><div class="pzt-stop-grid"><button data-stop="sienkiewicza"><span>01</span><b>Starostwo</b><small>ul. Sienkiewicza 03</small><i>Sprawdź odjazdy →</i></button><button data-stop="sempolowska"><span>02</span><b>Sempołowskiej</b><small>ul. Sempołowskiej 01</small><i>Sprawdź odjazdy →</i></button><button data-stop="slowackiego"><span>03</span><b>Słowackiego</b><small>ul. Słowackiego 03</small><i>Sprawdź odjazdy →</i></button></div></section><aside class="pzt-legend"><div><span class="eyebrow">OZNACZENIA</span><p><b>D</b> poniedziałek–piątek oprócz świąt · <b>1–7</b> konkretny dzień tygodnia · <b>S</b> dni nauki szkolnej · <b>m</b> bez 24 i 31 grudnia</p></div><a href="https://pztopatow.pl/index.php/transport-publiczny/" target="_blank" rel="noopener">Oficjalna strona PZT ↗</a></aside><p class="pzt-disclaimer">Rozkład ma charakter informacyjny. PZT może wprowadzać czasowe zmiany lub odwołania kursów. Przed ważną podróżą możesz potwierdzić kurs pod numerem <a href="tel:+48797994810">797 994 810</a>.</p></main><footer><div class="wrap footer-grid"><div class="brand invert"><img class="brand-logo" src="logo-powiatu.svg" alt=""><span><b>POWIAT OPATOWSKI</b><small>Starostwo Powiatowe w Opatowie</small></span></div><div><b>Dla mieszkańca</b><a href="autobusy-pzt.html">Autobusy PZT</a><a href="ostrzezenia-meteorologiczne.html">Aktualne ostrzeżenia</a><a href="archiwum-meteorologiczne.html">Archiwum meteorologiczne</a></div><div><b>Urząd</b><a href="wydzialy.html">Wydziały</a><a href="jednostki.html">Jednostki</a><a href="sluzby.html">Służby</a></div><div><b>Kontakt PZT</b><a href="tel:+48797994810">797 994 810</a><a href="mailto:biuro@pztopatow.pl">biuro@pztopatow.pl</a></div></div><div class="wrap copyright">© 2026 Powiat Opatowski</div></footer><script>
+const nav=document.querySelector(".nav nav");document.querySelector(".hamburger").onclick=()=>nav.classList.toggle("open");
+const departures=[];
+function add(stop,line,times,days,via,destination){times.split(" ").forEach(time=>departures.push({stop,line,time,days,via,destination}))}
+add("sienkiewicza","27","04:55 06:55 12:25 14:05 18:00","D,m","Gierczyce, Kunice","Ożarów");
+add("sienkiewicza","27","08:10","1,2,4,5","Gierczyce, Kunice","Ożarów");
+add("sienkiewicza","30","07:00","6,7","Sobótka, Pisary, Jankowice","Ożarów");
+add("sienkiewicza","34","06:45 12:10","6","Gierczyce, Łopata","Opatów");
+add("sienkiewicza","34","06:45 12:30","7","Gierczyce, Łopata","Opatów");
+add("sienkiewicza","35","09:40","D,m","Lisów, Łopata, Wojciechowice","Opatów");
+add("sienkiewicza","35","11:20","1,3","Lisów, Łopata, Wojciechowice","Opatów");
+add("sienkiewicza","39","05:12 15:12","D,m","Niemienice, Sadowie, Waśniów, Sarnia Zwola","Opatów");
+add("sienkiewicza","42","08:10 10:55 12:25","D,m","Kobylany","Iwaniska");
+add("sienkiewicza","42","07:30 10:15","6,7","Kobylany","Iwaniska");
+add("sienkiewicza","49","13:15","D,m","Kunice, Bidziny","Stodoły Kolonie");
+add("sienkiewicza","50","06:50","D,m","Gierczyce, Kaliszany, Koszyce","Wojciechowice");
+add("sienkiewicza","51","14:00","D,m","Gierczyce, Mikułowice, Drygulec","Wojciechowice");
+add("sienkiewicza","52","06:50","D,m","Lisów, Sadłowice, Łopata","Bidziny");
+add("sienkiewicza","53","13:29","D,m","Brzezie, Wojciechowice, Jasice","Bidziny");
+add("sienkiewicza","56","12:05","D,m","Ostrowiec Świętokrzyski, Nowa Słupia, Cedzyna","Kielce – onkologia");
+add("sienkiewicza","59","06:52","D,m","Lisów, Łopata","Stodoły");
+add("sienkiewicza","66","05:45 15:45","D,m","Bidziny, Jasice, Kliszany, Balbinów","Opatów");
+add("sienkiewicza","67","09:30","D,m","Iwaniska, Mydłów, Malżyn, Włostów","Opatów");
+add("sienkiewicza","67","11:20","2,4,5","Iwaniska, Mydłów, Malżyn, Włostów","Opatów");
+add("sienkiewicza","67","13:25","6,7","Iwaniska, Mydłów, Malżyn, Włostów","Opatów");
+add("sienkiewicza","69","08:15","1,3","Nikisiałka Mała, Adamów, Żurawniki, Włostów","Opatów");
+add("sienkiewicza","69","12:30","1","Nikisiałka Mała, Adamów, Żurawniki, Włostów","Opatów");
+add("sienkiewicza","69","11:50","3","Nikisiałka Mała, Adamów, Żurawniki, Włostów","Opatów");
+add("sienkiewicza","69","09:10 13:00","6","Nikisiałka Mała, Adamów, Żurawniki, Włostów","Opatów");
+add("sienkiewicza","69","08:40 13:20","7","Nikisiałka Mała, Adamów, Żurawniki, Włostów","Opatów");
+add("sienkiewicza","70","05:24","D,m","Baćkowice, Cedzyna","Kielce");
+add("sienkiewicza","70","16:01","D,m","Gierczyce, Bidziny","Ożarów");
+add("sienkiewicza","72","05:55 15:05","D,m","Małoszyce, Przeuszyn, Adamów","Opatów");
+add("sienkiewicza","73","09:00 12:35","3","Włostów, Mydłów","Opatów");
+add("sienkiewicza","75","05:40 14:53","D,m","Słabuszewice, Ublinek, Strzyżowice","Opatów");
+add("sienkiewicza","78","03:40 09:30 11:20 16:00","D,m","Stodoły, Ożarów, Bronisławów","Tarłów");
+add("sienkiewicza","81","08:05 13:20","D,m","Nikisiałka Mała, Nikisiałka Duża, Brzezie","Opatów");
+add("sienkiewicza","82","06:55 12:10","6,7","Modliborzyce, Załdów, Iwaniska, Kobylany","Opatów");
+add("sienkiewicza","82","08:10 12:35","3","Modliborzyce, Załdów, Iwaniska, Kobylany","Opatów");
+add("sienkiewicza","83","07:45 09:20","6,7","Czerwona Góra, Truskolasy, Niemienice","Opatów");
+add("sienkiewicza","84","08:15","2,4,5","Nieskurzów Stary, Wszachów, Iwaniska, Kobylany","Opatów");
+add("sienkiewicza","84","09:00","1,3","Nieskurzów Stary, Wszachów, Iwaniska, Kobylany","Opatów");
+add("sienkiewicza","84","12:30","D,m","Nieskurzów Stary, Wszachów, Iwaniska, Kobylany","Opatów");
+add("sienkiewicza","84","10:15 13:05","6,7","Nieskurzów Stary, Wszachów, Iwaniska, Kobylany","Opatów");
+add("sienkiewicza","85","14:55","D,m","Wąworków, Karwów, Włostów","Opatów");
+add("sienkiewicza","86","05:35","D,m","Iwaniska, Jastrzębska Wola","Stara Łagowica");
+add("sienkiewicza","87","14:48","D,m","Jałowęsy, Piskrzyn, Iwaniska, Jastrzębska Wola","Stara Łagowica");
+add("sempolowska","72","08:33 14:53","D,m","Rosochy, Przeuszyn, Podole, Małoszyce, Wszechświęte, Kornacice","Opatów");
+add("sempolowska","72","06:47","D,m","Opatów","Opatów");
+add("sempolowska","72","15:10","D,m","Bogusławice, Grocholice, Lipowa","Opatów");
+add("sempolowska","39","15:16","D,m","Zochcin, Niemienice, Truskolasy, Waśniów, Czerwona Góra, Sadowie","Opatów");
+add("sempolowska","66","15:53","D,m","Kaliszany, Wojciechowice, Jasice, Bidziny, Stodoły","Opatów");
+add("sempolowska","66","06:38","D,m","Opatów","Opatów – Starostwo");
+add("sempolowska","39","06:41","D,m","Opatów","Opatów – Starostwo");
+add("sempolowska","41","08:49 17:49","D,m","Opatów","Opatów – Starostwo");
+add("slowackiego","•","06:43 07:07 09:18 15:38","D,m","Opatów","Opatów – Starostwo");
+add("slowackiego","75","14:49","S","Strzyżowice, Mydłów, Włostów, Gołębiów, Słabuszewice, Nikisiałka Mała, Oficjałów","Opatów");
+add("slowackiego","72","14:51","D,m","Rosochy, Przeuszyn, Podole, Wszechświęte, Kornacice","Opatów");
+add("slowackiego","39","15:14","D,m","Zochcin, Niemienice, Truskolasy, Waśniów, Czerwona Góra, Sadowie","Opatów");
+add("slowackiego","66","15:48","D,m","Kaliszany, Wojciechowice, Jasice, Bidziny, Stodoły, Brzezie","Opatów");
+const stopNames={sienkiewicza:"Opatów – Starostwo",sempolowska:"Opatów – Sempołowskiej",slowackiego:"Opatów – Słowackiego"};
+const stopSelect=document.getElementById("stopSelect"),dateSelect=document.getElementById("dateSelect"),search=document.getElementById("routeSearch"),list=document.getElementById("departureList"),empty=document.getElementById("noDepartures"),title=document.getElementById("resultTitle"),allBtn=document.getElementById("allDayButton");
+let showAll=false;
+function localDate(d=new Date()){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,"0"),day=String(d.getDate()).padStart(2,"0");return y+"-"+m+"-"+day}
+dateSelect.value=localDate();
+function isoDay(d){return d.getDay()===0?7:d.getDay()}
+function activeOn(days,date){const day=String(isoDay(date)),parts=days.split(",");if(parts.includes("D"))return isoDay(date)<=5&&!["12-24","12-31"].includes(localDate(date).slice(5));if(parts.includes("S")){const m=date.getMonth()+1;return isoDay(date)<=5&&m!==7&&m!==8}return parts.includes(day)}
+function mins(t){const [h,m]=t.split(":").map(Number);return h*60+m}
+function normalize(s){return s.toLocaleLowerCase("pl").normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
+function dayDescription(days){if(days.includes("D"))return "dni robocze";if(days==="S")return "dni nauki szkolnej";return days.split(",").map(n=>["","pon.","wt.","śr.","czw.","pt.","sob.","niedz."][n]).join(", ")}
+function render(){
+ const chosen=new Date(dateSelect.value+"T12:00:00"),today=dateSelect.value===localDate(),now=new Date(),nowM=now.getHours()*60+now.getMinutes(),q=normalize(search.value.trim());
+ let rows=departures.filter(x=>x.stop===stopSelect.value&&activeOn(x.days,chosen)&&(!q||normalize(x.line+" "+x.destination+" "+x.via).includes(q))&&(showAll||!today||mins(x.time)>=nowM)).sort((a,b)=>mins(a.time)-mins(b.time));
+ title.textContent=(showAll||!today?"Wszystkie odjazdy – ":"Najbliższe odjazdy – ")+stopNames[stopSelect.value];
+ allBtn.textContent=showAll?"Pokaż tylko nadchodzące":"Pokaż cały dzień";
+ list.innerHTML=rows.map((x,i)=>{const delta=today?mins(x.time)-nowM:null;const when=today&&delta>=0?(delta===0?"teraz":delta<60?"za "+delta+" min":"za "+Math.floor(delta/60)+" godz. "+delta%60+" min"):"";return '<article class="departure-row'+(i===0&&!showAll&&today?' next':'')+'"><time>'+x.time+'</time><span class="pzt-line">L. '+x.line+'</span><div class="departure-route"><small>KIERUNEK</small><h3>'+x.destination+'</h3><p><b>Przez:</b> '+x.via+'</p><em>'+dayDescription(x.days)+'</em></div><strong>'+when+'</strong></article>'}).join("");
+ empty.hidden=rows.length!==0;list.hidden=rows.length===0;renderLines();
+}
+function renderLines(){const lines=[...new Set(departures.filter(x=>x.stop===stopSelect.value&&x.line!=="•").map(x=>x.line))].sort((a,b)=>Number(a)-Number(b));document.getElementById("lineChips").innerHTML=lines.map(x=>'<button data-line="'+x+'">'+x+'</button>').join("");document.querySelectorAll("[data-line]").forEach(b=>b.onclick=()=>{search.value=b.dataset.line;showAll=true;render();document.getElementById("odjazdy").scrollIntoView({behavior:"smooth"})})}
+function updateClock(){const d=new Date();document.getElementById("clock").textContent=d.toLocaleTimeString("pl-PL",{hour:"2-digit",minute:"2-digit"});document.getElementById("todayLabel").textContent=d.toLocaleDateString("pl-PL",{weekday:"long",day:"numeric",month:"long"})}
+stopSelect.onchange=()=>{showAll=false;search.value="";render()};dateSelect.onchange=()=>{showAll=false;render()};search.oninput=render;allBtn.onclick=()=>{showAll=!showAll;render()};document.querySelectorAll("[data-stop]").forEach(b=>b.onclick=()=>{stopSelect.value=b.dataset.stop;showAll=false;render();document.getElementById("odjazdy").scrollIntoView({behavior:"smooth"})});updateClock();setInterval(updateClock,30000);render();
+</script></body></html>
