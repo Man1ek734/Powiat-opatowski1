@@ -182,6 +182,26 @@
 <p>ul. Szpitalna 4, tel. 15 861 21 46</p>
 </article>
 <article>
+<span>EDUKACJA SPECJALNA</span>
+<h2>Specjalny Ośrodek Szkolno-Wychowawczy w Sulejowie</h2>
+<p>Sulejów 69, tel. 15 600 43 05</p>
+</article>
+<article>
+<span>EDUKACJA</span>
+<h2>Zespół Szkół w Ożarowie im. Marii Skłodowskiej-Curie</h2>
+<p>os. Wzgórze 56, tel. 15 861 18 01</p>
+</article>
+<article>
+<span>DROGI</span>
+<h2>Zarząd Dróg Powiatowych w Opatowie</h2>
+<p>ul. Lipowska 2, tel. 15 868 24 85</p>
+</article>
+<article>
+<span>SENIORZY</span>
+<h2>Klub „Senior+” w Ożarowie</h2>
+<p>os. Wzgórze 56, tel. 501 313 178</p>
+</article>
+<article>
 <span>BEZPIECZEŃSTWO</span>
 <h2>Służby, inspekcje i straże</h2>
 <p>Policja, PSP, nadzór budowlany, weterynaria i sanepid.</p>
@@ -218,6 +238,6 @@
 </div>
 <div class="wrap copyright">© 2026 Powiat Opatowski</div>
 </footer>
-<script>const n=document.querySelector(".nav nav");document.querySelector(".hamburger").onclick=()=>n.classList.toggle("open");const unitIds=['szpital','pup','pcpr','pckt','pzt','psds','zs1','zs2','copow','pow1','pow2','terapeutyczna','mojdom','ozarow','tarlow','soswdebno','soswjalowesy','soswniemienice','poradnia','dpsczachow','dpssobow','dpszochcinek','senior'];document.querySelectorAll('.info-grid article').forEach((card,i)=>{if(!unitIds[i])return;const a=document.createElement('a');a.href='jednostka.html?id='+unitIds[i];a.textContent='Otwórz podstronę →';card.append(a)});</script>
+<script>const n=document.querySelector(".nav nav");document.querySelector(".hamburger").onclick=()=>n.classList.toggle("open");const unitIds=['szpital','pup','pcpr','pckt','pzt','psds','zs1','zs2','copow','pow1','pow2','terapeutyczna','mojdom','ozarow','tarlow','soswdebno','soswjalowesy','soswniemienice','poradnia','dpsczachow','dpssobow','dpszochcinek','senior','soswsulejow','zsozarow','zdp','seniorozarow'];document.querySelectorAll('.info-grid article').forEach((card,i)=>{if(!unitIds[i])return;card.querySelectorAll('a').forEach(a=>a.remove());const a=document.createElement('a');a.href='jednostka.html?id='+unitIds[i];a.textContent='Otwórz podstronę →';card.append(a)});</script>
 <script src="accessibility.js?v=4"></script></body>
 </html>
