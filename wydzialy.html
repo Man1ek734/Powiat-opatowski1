@@ -218,6 +218,6 @@
 </div>
 <div class="wrap copyright">© 2026 Powiat Opatowski</div>
 </footer>
-<script>const n=document.querySelector(".nav nav");document.querySelector(".hamburger").onclick=()=>n.classList.toggle("open")</script>
+<script>const n=document.querySelector(".nav nav");document.querySelector(".hamburger").onclick=()=>n.classList.toggle("open");const detailIds=['administracyjny','organizacyjny','finansowy','oswiata','kryzysowy','komunikacja','geodezja','budownictwo','rolnictwo','orzekanie','prawny','konsumenci','inwestycje','nieruchomosci','kadry','bhp'];document.querySelectorAll('.directory article').forEach((row,i)=>{const current=row.querySelector(':scope>a'),box=document.createElement('div'),details=document.createElement('a');box.className='directory-actions';details.href='wydzial.html?id='+detailIds[i];details.textContent='Szczegóły →';box.append(details);if(current)box.append(current);row.append(box)});</script>
 <script src="accessibility.js?v=4"></script></body>
 </html>
