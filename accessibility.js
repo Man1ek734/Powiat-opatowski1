@@ -1,5 +1,6 @@
 (()=>{
-  const STORAGE_KEY="powiat-opatowski-accessibility-v2";
+  const STORAGE_KEY="powiat-opatowski-accessibility-v3";
+  const LEGACY_KEYS=["powiat-opatowski-accessibility-v1","powiat-opatowski-accessibility-v2"];
   const levels=[1,1.15,1.3];
   const defaults={font:0,contrast:false,links:false};
   let settings={...defaults};
@@ -13,6 +14,24 @@
       contrast:Boolean(saved.contrast),
       links:Boolean(saved.links)
     };
+
+    /* Poprzednie wersje kontrastu mogły zapisać ustawienie powodujące pusty
+       ekran. Zachowujemy bezpieczne preferencje, ale kontrast włączamy od nowa
+       dopiero świadomym kliknięciem użytkownika. */
+    if(!saved){
+      for(const key of LEGACY_KEYS){
+        const legacy=JSON.parse(localStorage.getItem(key)||"null");
+        if(legacy&&typeof legacy==="object"){
+          settings={
+            font:Math.max(0,Math.min(2,Number(legacy.font)||0)),
+            contrast:false,
+            links:Boolean(legacy.links)
+          };
+          break;
+        }
+      }
+    }
+    LEGACY_KEYS.forEach(key=>localStorage.removeItem(key));
   }catch(_){settings={...defaults}}
 
   const utility=document.querySelector(".utility-links");

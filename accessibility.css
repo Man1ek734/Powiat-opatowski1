@@ -54,9 +54,13 @@ html.a11y-contrast body{
   --ink:#000;
   --green:#034b36;
   --bright:#006b42;
-  --muted:#26342e;
-  --line:#6b7771;
+  --cream:#f7f7f7;
+  --muted:#111;
+  --line:#555;
 }
+html.a11y-contrast{color-scheme:light}
+html.a11y-contrast :is(.header,.search-box,.results){box-shadow:none}
+html.a11y-contrast :is(input,select,textarea){border-color:#222}
 html.a11y-contrast .accessibility-panel{border:2px solid #102b22;border-top:5px solid #0d5a42}
 html.a11y-contrast .accessibility-switch[aria-checked="true"]{outline:3px solid #102b22!important;outline-offset:2px}
 
