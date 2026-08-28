@@ -1,1 +1,180 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Program projektowy | Powiat Opatowski</title><link rel="icon" href="logo-powiatu.svg"><link rel="stylesheet" href="styles.css?v=9"><link rel="stylesheet" href="category-pages.css?v=2"><link rel="stylesheet" href="content-pages.css?v=1"><link rel="stylesheet" href="accessibility.css?v=4"></head><body><header class="header"><div class="wrap nav"><a class="brand" href="index.html"><img class="brand-logo" src="logo-powiatu.svg" alt="Herb"><span><b>POWIAT OPATOWSKI</b></span></a><button class="hamburger" aria-label="Otwórz menu"><i></i><i></i><i></i></button><nav><a href="powiat.html">Powiat</a><a href="aktualnosci.html">Aktualności</a><a href="wydzialy.html">Wydziały</a><a href="jednostki.html">Jednostki</a><a class="active" href="projekty.html">Projekty</a><a href="kontakt.html">Kontakt</a></nav></div></header><section class="plain-hero"><div class="wrap"><span class="eyebrow">PROJEKTY I INWESTYCJE</span><h1 id="title">Program projektowy</h1><p id="lead"></p></div></section><main class="content-shell wrap"><a class="content-back" href="projekty.html">← Wszystkie programy</a><div class="content-layout"><section class="content-main"><h2>Projekty w tej kategorii</h2><p>Inwestycje realizowane przez Powiat Opatowski w ramach wybranego programu.</p></section><aside class="content-side"><div class="content-panel dark"><small>PROGRAM</small><h2 id="program"></h2><p id="description"></p></div><div class="content-panel"><small>POWIĄZANE</small><a href="zamowienia-publiczne.html">Zamówienia publiczne →</a></div></aside></div></main><footer><div class="wrap copyright">© 2026 Powiat Opatowski</div></footer><script>const d={ue:["Fundusze Europejskie","Projekty współfinansowane ze środków Unii Europejskiej."],efrr:["Europejski Fundusz Rozwoju Regionalnego","Inwestycje wspierające rozwój regionalny i infrastrukturę."],cwd:["Centrum Wsparcia Doradczego Plus","Projekty i działania prowadzone przy wsparciu doradczym."],polskilad:["Rządowy Fundusz Polski Ład","Zadania dofinansowane z programu Polski Ład."],budzet:["Budżet Państwa","Zadania dofinansowane z budżetu państwa."],rfil:["Rządowy Fundusz Inwestycji Lokalnych","Inwestycje lokalne wspierane ze środków rządowych."],nfos:["NFOŚiGW","Projekty środowiskowe i energetyczne."],wfos:["WFOŚiGW w Kielcach","Regionalne projekty ochrony środowiska."],pfron:["PFRON","Działania na rzecz dostępności i osób z niepełnosprawnościami."],drogi:["Projekty drogowe","Remonty, przebudowy i poprawa bezpieczeństwa dróg powiatowych."],mkidn:["Ministerstwo Kultury i Dziedzictwa Narodowego","Projekty kulturalne i ochrona dziedzictwa."],inne:["Pozostałe projekty","Inne przedsięwzięcia realizowane przez Powiat Opatowski."]};const id=new URLSearchParams(location.search).get('id')||'ue',x=d[id]||d.ue;document.title=x[0]+' | Powiat Opatowski';title.textContent=x[0];program.textContent=x[0];lead.textContent=x[1];description.textContent=x[1];document.querySelector('.hamburger').onclick=()=>document.querySelector('.nav nav').classList.toggle('open')</script><script src="accessibility.js?v=4"></script></body></html>
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Program projektowy | Powiat Opatowski</title>
+<meta name="description" content="Projekty i inwestycje Powiatu Opatowskiego według źródła finansowania">
+<link rel="icon" href="logo-powiatu.svg">
+<link rel="stylesheet" href="styles.css?v=9">
+<link rel="stylesheet" href="category-pages.css?v=2">
+<link rel="stylesheet" href="content-pages.css?v=5">
+<link rel="stylesheet" href="accessibility.css?v=4">
+</head>
+<body>
+<header class="header"><div class="wrap nav"><a class="brand" href="index.html"><img class="brand-logo" src="logo-powiatu.svg" alt="Herb"><span><b>POWIAT OPATOWSKI</b></span></a><button class="hamburger" aria-label="Otwórz menu"><i></i><i></i><i></i></button><nav><a href="powiat.html">Powiat</a><a href="mieszkaniec.html">Mieszkaniec</a><a href="turysta.html">Turysta</a><a href="aktualnosci.html">Aktualności</a><a href="wydzialy.html">Wydziały</a><a href="jednostki.html">Jednostki</a><a class="active" href="projekty.html">Projekty</a><a href="kontakt.html">Kontakt</a></nav></div></header>
+
+<section class="plain-hero"><div class="wrap"><span class="eyebrow">PROJEKTY I INWESTYCJE</span><h1 id="title">Program projektowy</h1><p id="lead"></p></div></section>
+
+<main class="content-shell wrap">
+<a class="content-back" href="projekty.html">← Wszystkie programy</a>
+<div class="content-layout project-layout">
+<section class="content-main">
+<div class="project-heading"><div><span class="eyebrow dark">WYKAZ INWESTYCJI</span><h2>Projekty w tej kategorii</h2></div><b id="projectCount"></b></div>
+<div class="project-list" id="projectList"></div>
+</section>
+<aside class="content-side">
+<div class="content-panel dark"><small>PROGRAM</small><h2 id="program"></h2><p id="description"></p></div>
+<div class="content-panel"><small>ŹRÓDŁO DANYCH</small><p>Wykaz przygotowano na podstawie informacji opublikowanych przez Starostwo Powiatowe w Opatowie.</p><a id="source" target="_blank" rel="noopener">Otwórz oficjalny wykaz →</a></div>
+<div class="content-panel"><small>POWIĄZANE</small><a href="zamowienia-publiczne.html">Zamówienia publiczne →</a></div>
+</aside>
+</div>
+</main>
+
+<footer><div class="wrap copyright">© 2026 Powiat Opatowski</div></footer>
+<script>
+const base='https://www.opatow.pl/';
+const programs={
+budzet:{
+ name:'Budżet Państwa',
+ desc:'Zadania dofinansowane ze środków budżetu państwa.',
+ source:base+'strona-1014-projekty_realizowane_z_budzetu_panstwa.html',
+ projects:[
+  ['„Aktywna Tablica”','Wsparcie dla dwóch szkół ponadpodstawowych Powiatu Opatowskiego na rozwój infrastruktury szkolnej oraz kompetencji uczniów i nauczycieli.',base+'strona-1055-aktywna_tablica.html'],
+  ['Przebudowa pomieszczeń Starostwa i dostosowanie przeciwpożarowe','Kompleksowe dostosowanie budynku Starostwa Powiatowego w Opatowie do obowiązujących przepisów przeciwpożarowych.',base+'strona-1056-dofinansowano_ze_srodkow_budzetu.html']
+ ]
+},
+cwd:{
+ name:'Centrum Wsparcia Doradczego Plus',
+ desc:'Wspólne działania rozwojowe Partnerstwa „Ziemia Opatowska”.',
+ source:base+'strona-1029-centrum_wsparcia_doradczego_plus.html',
+ projects:[
+  ['Centrum Wsparcia Doradczego Plus','Kontynuacja programu doradczego dla Partnerstwa „Ziemia Opatowska”, obejmującego przygotowanie dokumentacji i przedsięwzięć ważnych dla rozwoju całego obszaru.',base+'aktualnosc-2052-centrum_wsparcia_doradczego_plus.html'],
+  ['Strategia Terytorialna Partnerstwa „Ziemia Opatowska”','Współpraca Powiatu Opatowskiego i ośmiu gmin przy realizacji wspólnej strategii terytorialnej oraz projektów ponadlokalnych.',base+'aktualnosc-2189-informacja_centrum_wsparcia_doradczego.html']
+ ]
+},
+efrr:{
+ name:'Europejski Fundusz Rozwoju Regionalnego',
+ desc:'Inwestycje infrastrukturalne, cyfrowe, edukacyjne i energetyczne.',
+ source:base+'strona-1032-europejski_fundusz_rozwoju_regionalnego.html',
+ projects:[
+  ['e-Świętokrzyskie – rozbudowa infrastruktury informatycznej JST','Rozbudowa infrastruktury informatycznej jednostek samorządu terytorialnego i rozwój elektronicznych usług publicznych.',base+'strona-104-projekt_e_swietokrzyskie_rozbudowa.html'],
+  ['„Nad Czarną i Kamienną” – podsumowanie projektu','Projekt promocyjno-turystyczny prezentujący walory historyczne, kulturowe i przyrodnicze regionu.',base+'strona-107-nad_czarna_i_kamienna_podsumowanie.html'],
+  ['Termomodernizacja i rozbudowa budynków użyteczności publicznej 2007–2015','Poprawa efektywności energetycznej i warunków użytkowania obiektów należących do Powiatu Opatowskiego.',base+'strona-106-ws_2007_2015_termomodernizacja_i.html'],
+  ['Program Cyfrowy Powiat','Rozwój usług publicznych, infrastruktury cyfrowej oraz odporności urzędu na zagrożenia teleinformatyczne.',base+'strona-1033-program_cyfrowy_powiat.html'],
+  ['Infrastruktura kultury, turystyki i rekreacji','Budowa infrastruktury służącej realizacji zadań kulturalnych, turystycznych i rekreacyjnych w powiecie opatowskim.',base+'strona-1112-budowa_infrastruktury_do_wykonywania.html'],
+  ['Termomodernizacja budynków użyteczności publicznej – RPOWŚ 2014–2020','Modernizacja energetyczna obiektów publicznych na terenie Powiatu Opatowskiego.',base+'strona-1113-termomodernizacja_budynkow_uzytecznosci.html'],
+  ['Wzmocnienie infrastruktury edukacyjnej ZS nr 1 i ZS nr 2 w Opatowie','Podnoszenie efektywności kształcenia przez modernizację zaplecza edukacyjnego obu szkół.',base+'strona-1114-podnoszenie_efektywnosci_ksztalcenia_w.html'],
+  ['Wzmocnienie infrastruktury edukacyjnej Zespołu Szkół w Ożarowie','Modernizacja zaplecza Zespołu Szkół im. Marii Skłodowskiej-Curie w Ożarowie.',base+'strona-1116-podnoszenie_efektywnosci_ksztalcenia_w.html'],
+  ['Termomodernizacja budynków publicznych – nabór 2020','Kolejny etap poprawy efektywności energetycznej obiektów użyteczności publicznej Powiatu Opatowskiego.',base+'strona-1117-termomodernizacja_budynkow_uzytecznosci.html'],
+  ['Modernizacja zaplecza praktycznej nauki zawodu','Podniesienie jakości kształcenia zawodowego przez modernizację i doposażenie pracowni oraz obiektów szkolnych.',base+'strona-1118-podniesienie_jakosci_ksztalcenia.html']
+ ]
+},
+polskilad:{
+ name:'Rządowy Fundusz Polski Ład',
+ desc:'Inwestycje strategiczne Powiatu Opatowskiego.',
+ source:base+'strona-1031-rzadowy_fundusz_polski_lad.html',
+ projects:[
+  ['Placówka opiekuńczo-wychowawcza w Ciszycy Górnej','Przebudowa, zmiana sposobu użytkowania i termomodernizacja budynku na placówkę specjalistyczno-terapeutyczną.',base+'strona-1037-przebudowa_zmiana_sposobu_uzytkowania_i.html'],
+  ['Bursa szkolna w Zespole Szkół nr 2 w Opatowie','Przebudowa części parteru budynku dydaktycznego i zmiana sposobu użytkowania na bursę szkolną.',base+'strona-1078-przebudowa_wraz_ze_zmiana_sposobu.html'],
+  ['Polski Ład – edycja 6 PGR','Zadanie inwestycyjne Powiatu Opatowskiego dofinansowane w szóstej edycji programu dla terenów popegeerowskich.',base+'strona-1101-rzadowy_fundusz_polski_lad_program.html'],
+  ['Polski Ład – edycja 3 PGR','Zadanie inwestycyjne Powiatu Opatowskiego dofinansowane w trzeciej edycji programu dla terenów popegeerowskich.',base+'strona-1102-rzadowy_fundusz_polski_lad_program.html']
+ ]
+},
+ue:{
+ name:'Fundusze Europejskie',
+ desc:'Projekty społeczne, edukacyjne, cyfrowe i infrastrukturalne współfinansowane przez Unię Europejską.',
+ source:base+'strona-82-projekty_realizowane_ze_srodkow_ue.html',
+ projects:[
+  ['Europejski Fundusz Społeczny','Programy społeczne, edukacyjne i aktywizacyjne realizowane ze środków Europejskiego Funduszu Społecznego.',base+'strona-164-projekty_realizowane_ze_srodkow.html'],
+  ['Europejski Fundusz Rozwoju Regionalnego','Projekty infrastrukturalne, cyfrowe, edukacyjne i energetyczne finansowane z EFRR.',base+'strona-1032-europejski_fundusz_rozwoju_regionalnego.html'],
+  ['Europejski Fundusz Społeczny Plus (EFS+)','Aktualne projekty społeczne i edukacyjne współfinansowane z EFS+.',base+'strona-1071-projekty_realizowane_ze_srodkow.html'],
+  ['Fundusze Europejskie na Rozwój Cyfrowy','Przedsięwzięcia rozwijające cyfryzację, cyberbezpieczeństwo i elektroniczne usługi publiczne.',base+'strona-1080-fundusze_europejskie_na_rozwoj_cyfrowy.html'],
+  ['„Dziś uczeń – jutro student”','Projekt realizowany od 1 września 2023 r. do 30 czerwca 2027 r., wspierający rozwój edukacyjny uczniów. Wartość całego projektu wynosi 61 282 046,11 zł.',base+'strona-1093-projekt_dzis_uczen_jutro_student.html'],
+  ['„Wsparcie pracowników z Powiatu Opatowskiego”','Projekt realizowany przez Fundację Możesz Więcej i Powiat Opatowski, współfinansowany z EFS+ w ramach programu regionalnego.',base+'strona-1094-projekt_wsparcie_pracownikow_z_powiatu.html']
+ ]
+},
+nfos:{
+ name:'NFOŚiGW',
+ desc:'Projekty środowiskowe i energetyczne.',
+ source:base+'strona-83-projekty_realizowane_z_nfosigw.html',
+ projects:[
+  ['Termomodernizacja trzech budynków użyteczności publicznej','Inwestycja ograniczająca zużycie energii w trzech obiektach publicznych na terenie Powiatu Opatowskiego.',base+'strona-95-termomodernizacja_trzech_budynkow.html']
+ ]
+},
+rfil:{
+ name:'Rządowy Fundusz Inwestycji Lokalnych',
+ desc:'Inwestycje lokalne wsparte środkami rządowymi.',
+ source:base+'strona-1030-rzadowy_fundusz_inwestycji_lokalnych.html',
+ projects:[
+  ['Dofinansowanie dróg, chodników i rehabilitacji szpitalnej','Pakiet zadań obejmujący drogi i chodniki w Malicach Kościelnych i Wszechświętych oraz adaptację pomieszczeń rehabilitacji Szpitala Św. Leona.',base+'aktualnosc-1979-rzadowy_fundusz_inwestycji_lokalnych.html'],
+  ['Placówka opiekuńczo-wychowawcza przy ul. Kościuszki','Przebudowa domu dla czternastu wychowanków. Wartość zadania: 2 555 000 zł, w tym 956 627 zł wsparcia z Funduszu Inwestycji Lokalnych.',base+'aktualnosc-1978-rzadowy_fundusz_inwestycji_lokalnych.html'],
+  ['Rehabilitacja w Szpitalu Św. Leona','Rozbudowa zaplecza rehabilitacyjnego szpitala. Dofinansowanie: 929 737,70 zł; całkowity koszt inwestycji: 3 159 000 zł.',base+'aktualnosc-1977-rzadowy_fundusz_inwestycji_lokalnych.html']
+ ]
+},
+pfron:{
+ name:'PFRON',
+ desc:'Likwidacja barier i dostosowanie obiektów do potrzeb osób z niepełnosprawnościami.',
+ source:base+'strona-84-projekty_realizowane_z_pfron.html',
+ projects:[
+  ['Termomodernizacja i rozbudowa budynków publicznych','Modernizacja obiektów publicznych Powiatu Opatowskiego z uwzględnieniem dostępności dla osób z niepełnosprawnościami.',base+'strona-96-termomodernizacja_i_rozbudowa_budynkow.html'],
+  ['Wymiana drzwi w budynku Starostwa – likwidacja barier','Dostosowanie ciągów komunikacyjnych Starostwa Powiatowego do potrzeb osób z niepełnosprawnościami.',base+'strona-1148-wymiana_drzwi_wewnetrznych_w_budynku.html'],
+  ['Remont pomieszczeń biurowych i odbiór zadania','Zakończenie prac zwiększających dostępność pomieszczeń na pierwszym piętrze Starostwa.',base+'strona-1151-wymiana_drzwi_wewnetrznych_w_budynku.html'],
+  ['Dostosowanie SOSW w Sulejowie','Przebudowa i modernizacja Specjalnego Ośrodka Szkolno-Wychowawczego w Sulejowie do potrzeb osób z niepełnosprawnościami.',base+'strona-1175-przebudowa_i_modernizacja_w_celu.html']
+ ]
+},
+wfos:{
+ name:'WFOŚiGW w Kielcach',
+ desc:'Regionalne projekty ochrony środowiska i efektywności energetycznej.',
+ source:base+'strona-85-projekty_realizowane_z_wfosigw_w.html',
+ projects:[
+  ['Termomodernizacja budynku Starostwa Powiatowego','Poprawa efektywności energetycznej budynku Starostwa Powiatowego w Opatowie.',base+'strona-97-termomodernizacja_budynkow_uzytecznosci.html']
+ ]
+},
+drogi:{
+ name:'Projekty drogowe',
+ desc:'Remonty dróg, chodników i infrastruktury bezpieczeństwa.',
+ source:base+'strona-86-projekty_drogowe.html',
+ projects:[
+  ['Drogi Ożarów–Gliniany–Teofilów i Bidziny–Jasice–Smugi','Dwie inwestycje o łącznym dofinansowaniu 1 502 347 zł z Rządowego Funduszu Rozwoju Dróg: remont drogi w Ożarowie i budowa chodnika w Bidzinach.',base+'aktualnosc-2156-poltora_miliona_zlotych_na_drogi_i.html'],
+  ['Nowe przejścia dla pieszych w Tarłowie i Smugach','Budowa aktywnych, oświetlonych przejść dla pieszych wraz z chodnikami, zatoką autobusową i nową nawierzchnią.',base+'aktualnosc-2024-nowe_przejscia_dla_pieszych_na_drogach.html'],
+  ['Remont dróg w Mydłowie, Kaczycach i Leszczkowie','Kompleksowy remont trzech odcinków dróg powiatowych, obejmujący nową nawierzchnię asfaltową i utwardzenie poboczy.',base+'aktualnosc-1985-wyremontowalismy_trzy_odcinki_drog_ich.html'],
+  ['Modernizacja dróg powiatowych','Pakiet inwestycji poprawiających stan nawierzchni i bezpieczeństwo na drogach należących do Powiatu Opatowskiego.',base+'aktualnosc-1640-miliony_na_modernizacje_drog_powiatowych.html'],
+  ['Remont trzech dróg powiatowych – RFRD','Remont odcinków w Leszczkowie, Kaczycach i Mydłowie o łącznej wartości 898 074,45 zł.',base+'aktualnosc-1928-trwaja_remonty_drog_powiatowych.html']
+ ]
+},
+mkidn:{
+ name:'Ministerstwo Kultury i Dziedzictwa Narodowego',
+ desc:'Projekty kulturalne i ochrona dziedzictwa.',
+ source:base+'strona-165-projekty_realizowane_z_mkidn.html',
+ projects:[
+  ['Modernizacja tarasu przy Podziemnej Trasie Turystycznej','Dofinansowanie modernizacji tarasu przy Podziemnej Trasie Turystycznej w Opatowie.',base+'strona-1016-podpisanie_umowy_dotyczacej.html']
+ ]
+},
+inne:{
+ name:'Pozostałe projekty',
+ desc:'Inne przedsięwzięcia społeczne i infrastrukturalne Powiatu Opatowskiego.',
+ source:base+'strona-87-projekty_pozostale.html',
+ projects:[
+  ['Placówka Opiekuńczo-Wychowawcza Nr 1 w Opatowie','Adaptacja części dawnego Szpitala Powiatowego przy ul. Szpitalnej 4 na placówkę o powierzchni użytkowej 307,19 m².',base+'strona-101-placowka_opiekunczo_wychowawcza_nr_1_w.html'],
+  ['Dom Dzienny „Senior–WIGOR”','Utworzenie w Opatowie dziennego domu dla seniorów w ramach programu wieloletniego „Senior–WIGOR”.',base+'strona-100-dom_dzienny_senior_wigor.html'],
+  ['Placówka Opiekuńczo-Wychowawcza w Tarłowie','Adaptacja budynku przy Rynku 13 w Tarłowie na całodobową placówkę opiekuńczo-wychowawczą.',base+'strona-99-placowka_opiekunczo_wychowawcza_w.html'],
+  ['Dostosowanie Szpitala Św. Leona do przepisów przeciwpożarowych','Pierwszy etap dostosowania budynku A szpitala; wartość robót objętych odbiorem częściowym przekroczyła 945 tys. zł.',base+'strona-1152-dostosowanie_budynku_a_szpitala_sw.html']
+ ]
+}
+};
+const id=new URLSearchParams(location.search).get('id')||'ue';
+const data=programs[id]||programs.ue;
+document.title=data.name+' | Powiat Opatowski';
+title.textContent=data.name;
+program.textContent=data.name;
+lead.textContent=data.desc;
+description.textContent=data.desc;
+projectCount.textContent=data.projects.length+' '+(data.projects.length===1?'projekt':data.projects.length<5?'projekty':'projektów');
+source.href=data.source;
+projectList.innerHTML=data.projects.map((item,index)=>'<article class="project-card"><div class="project-number">'+String(index+1).padStart(2,'0')+'</div><div><span>PROJEKT POWIATU</span><h3>'+item[0]+'</h3><p>'+item[1]+'</p><a href="'+item[2]+'" target="_blank" rel="noopener">Oficjalne informacje i dokumenty →</a></div></article>').join('');
+document.querySelector('.hamburger').onclick=()=>document.querySelector('.nav nav').classList.toggle('open');
+</script>
+<script src="accessibility.js?v=4"></script>
+</body>
+</html>
